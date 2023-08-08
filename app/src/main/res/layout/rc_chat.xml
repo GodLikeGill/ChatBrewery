@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/profile_pic_chat"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/circle_32"/>
+
+    <TextView
+        android:id="@+id/user_name_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/profile_pic_chat"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:text="Jatin Singh Gill"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/dosis"/>
+
+    <TextView
+        android:id="@+id/recent_msg_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_name_chat"
+        android:layout_toEndOf="@id/profile_pic_chat"
+        android:layout_marginStart="8dp"
+        android:text="Hey jatin, how are you?"
+        android:textSize="16sp"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:text="19:08:22"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/dosis"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/profile_pic_chat"
+        android:layout_toEndOf="@id/profile_pic_chat"
+        android:layout_marginTop="4dp"
+        android:background="@color/black" />
+
+</RelativeLayout>

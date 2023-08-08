@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Chats"
+        android:id="@+id/chats"
+        android:icon="@drawable/icon_chat_32"/>
+    <item android:title="Friends"
+        android:id="@+id/friends"
+        android:icon="@drawable/icon_friends_32"/>
+    <item android:title="Updates"
+        android:id="@+id/updates"
+        android:icon="@drawable/icon_updates_32"/>
+</menu>

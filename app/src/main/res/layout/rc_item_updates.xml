@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="32dp"
+    android:background="@drawable/rect_4_60">
+
+    <ImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rect_100"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_profile_titles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/profile_pic"
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name :"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/dosis_semibold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone :"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/dosis_semibold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/dosis_semibold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_profile_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/profile_pic"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/linearlayout_profile_titles">
+
+        <TextView
+            android:id="@+id/textview_rc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/dosis"/>
+
+        <TextView
+            android:id="@+id/textview_rc_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/dosis" />
+
+        <TextView
+            android:id="@+id/textview_rc_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:fontFamily="@font/dosis" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearlayout_profile_details">
+
+        <ImageButton
+            android:id="@+id/accept_friend_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:tint="@color/black"
+            android:src="@drawable/check_circle_32"/>
+
+        <ImageButton
+            android:id="@+id/reject_friend_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"
+            android:tint="@color/black"
+            android:src="@drawable/cancel_32"/>
+
+    </LinearLayout>
+</RelativeLayout>
